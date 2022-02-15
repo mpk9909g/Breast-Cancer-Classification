@@ -11,6 +11,9 @@ We used 3 different feature selections.
 1. Second group includes the top 7 features selected based on the the SelectKBest function.
 1. Third group includes the top 7 features selected based on their correlation with each other and the diagnosis.
 
+All test and train datasets are in the ```test_train_data``` folder.
+All scaler files are in the ```scaler``` folder
+
 Group 1;
 Train data files : ```X_train_scaled.csv```
 Test data files : ```X_test_scaled.csv```
