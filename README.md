@@ -5,16 +5,28 @@ Data preprocessing notebook includes data cleaning, feature selection and splitt
 
 Our preprocessing also includes selecting the best features for our model. 
 
-We used 2 different feature selections.  
+We used 3 different feature selections.  
   
 1. First group includes all of the features from the data.
-1. Second group includes the top 7 features selected based on the correlation heat map and/or the SelectKBest. 
+1. Second group includes the top 7 features selected based on the the SelectKBest function.
+1. Third group includes the top 7 features selected based on their correlation with each other and the diagnosis.
 
-Train and test input data files for group 1  are ```X_train_scaled.csv``` and ```X_test_scaled.csv``` respectively.
-Scaler file for group 1 is ```scaler_allfeatures.sav```.
+Group 1;
+Train data files : ```X_train_scaled.csv```
+Test data files : ```X_test_scaled.csv```
+Scaler file  ```scaler_allfeatures.sav```
 
-```encoded_y_train.csv``` and ```encoded_y_test.csv``` files have the label encoded outcomes. 
+Group 2;
+Train data files : ```X_train_scaled_sk.csv```
+Test data files : ```X_test_scaled_sk.csv```
+Scaler file  ```scaler_selectBestFeatures.sav```
 
-```y_train_categorical.csv``` and ```y_test_categorical.csv``` files have the one hot encoded outcomes. Both type of files were used in this study. 
+Group 3;
+Train data files : ```X_train_scaled_cs.csv```
+Test data files : ```X_test_scaled_cs.csv```
+Scaler file  ```scaler_correlationFeatures.sav```
+
+
+
 
 
