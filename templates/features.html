@@ -68,7 +68,7 @@
     <div class="container margin-top-100">
 
       <div class="row margin-top-100">
-        <h1 class="title text-center text-light bg-secondary">Data Cleanig and Preprocessing</h1>
+        <h1 class="title text-center text-light bg-secondary">Data Cleaning and Preprocessing</h1>
         <div class="row pt-4">
           <div class="col-md-6">
             <p class="text-left h4 pt-2 margin-left-100"> Cleaning Steps:</p>
@@ -89,11 +89,13 @@
       <div class="row margin-top-100">
         <h1 class="title text-center text-light bg-secondary">Feature Analysis</h1>
         <p class="text-left h4 pt-2"> Feature Analysis</p>
-        <p class="h5 pt-2">The presence of multicollinearity between features is proven in below graphs in numbers. 
-        <p class="h5 pt-2">There are two sets of highly correlated features: </p>
-        <p class="h5 pt-2"> - Radius, Perimeter, Area attributes</p>
-        <p class="h5"> - Concavity, Concave points, Compactness</p>
-        <p class="h5 pt-2"> Based on Correlation with Diagnosis and Correlation between features, below are the final features picked for the model:</p>
+        <p class="h5 pt-2">An objective of the project is to reduce the number of features required to make an accruate model, and reduce the multicollinearity.</p>
+        <p class="h5 pt-2">The charts below indicate that the "Worst" features generally have a high correlation with the Diagnosis.</p> 
+        <p class="h5 pt-2">In addition, the charts reveal two sets of highly correlated features: </p>
+        <p class="h5 pt-2">   -"Size" features, which include Radius, Perimeter, and Area</p>
+        <p class="h5 pt-2">   -"Shape" features, which include Concavity, Concave points, and Compactness</p>
+        <p class="h5 pt-2">Based on these observations, we selected the seven features below:</p>
+
         <li class="h5 text-primary">perimeter_worst</li>
         <li class="h5 text-primary">concave points_worst</li>  
         <li class="h5 text-primary">symmetry_worst</li>  
