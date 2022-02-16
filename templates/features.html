@@ -68,14 +68,19 @@
     <div class="container margin-top-100">
 
       <div class="row margin-top-100">
-        <h1 class="title text-center text-light bg-secondary">Data Cleaning</h1>
+        <h1 class="title text-center text-light bg-secondary">Data Cleanig and Preprocessing</h1>
         <div class="row pt-4">
           <div class="col-md-6">
-            <p class="text-left h4 pt-2"> Cleaning Steps</p>
+            <p class="text-left h4 pt-2 margin-left-100"> Cleaning Steps:</p>
+            <li class="text-left h5 pt-2 margin-left-100">Read csv data</li>
+            <li class="text-left h5 pt-2 margin-left-100">Drop NA</li>
+            <li class="text-left h5 pt-2 margin-left-100">Graph the data</li>
           </div>
           <div class="col-md-6">
-            <a target="_blank" href="../static/images/svm.PNG">
-              <img src="../static/images/svm.PNG" alt="breast cancer diagrame" class="img-fluid">
+            <p class="text-left h4 pt-2"> Data Preprocessing</p>
+            <li class="text-left h5 pt-2"> Data with all features- Split scale and transform</p>
+            <li class="text-left h5 pt-2"> Data with selected features from selectBest function- Split scale and transform</li>
+            <li class="text-left h5 pt-2"> Data with manually selected features based on correlations- Split scale and transform</li>
             </a>
           </div>
         </div>
@@ -84,18 +89,18 @@
       <div class="row margin-top-100">
         <h1 class="title text-center text-light bg-secondary">Feature Analysis</h1>
         <p class="text-left h4 pt-2"> Feature Analysis</p>
-        <p class="h5 pt-2">The presence of multicollinearity between some features is proven here. 
+        <p class="h5 pt-2">The presence of multicollinearity between features is proven in below graphs in numbers. 
         <p class="h5 pt-2">There are two sets of highly correlated features: </p>
         <p class="h5 pt-2"> - Radius, Perimeter, Area attributes</p>
         <p class="h5"> - Concavity, Concave points, Compactness</p>
         <p class="h5 pt-2"> Based on Correlation with Diagnosis and Correlation between features, below are the final features picked for the model:</p>
-        <ul class="h5 text-primary">perimeter_worst</ul>
-        <ul class="h5 text-primary">concave points_worst</ul>  
-        <ul class="h5 text-primary">symmetry_worst</ul>  
-        <ul class="h5 text-primary">smoothness_worst</ul>  
-        <ul class="h5 text-primary">compactness_worst</ul>  
-        <ul class="h5 text-primary">texture_worst</ul>  
-        <ul class="h5 text-primary">fractal_dimension_worst</ul>
+        <li class="h5 text-primary">perimeter_worst</li>
+        <li class="h5 text-primary">concave points_worst</li>  
+        <li class="h5 text-primary">symmetry_worst</li>  
+        <li class="h5 text-primary">smoothness_worst</li>  
+        <li class="h5 text-primary">compactness_worst</li>  
+        <li class="h5 text-primary">texture_worst</li>  
+        <li class="h5 text-primary">fractal_dimension_worst</li>
 
         <div class='tableauPlaceholder pt-4' id='viz1644889549348' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BreastCancerVisuals_Correlations&#47;CorrelationWithDiagnosis' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1644889549348');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1664px';vizElement.style.minHeight='813px';vizElement.style.maxHeight='910px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1664px';vizElement.style.minHeight='813px';vizElement.style.maxHeight='910px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.minWidth='1435px';vizElement.style.maxWidth='100%';vizElement.style.height='750px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>
           
