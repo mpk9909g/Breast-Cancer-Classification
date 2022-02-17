@@ -16,7 +16,7 @@
 
     <!-- Nav Bar Setting -->
     <nav class="h5 navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="index.html">Overview</a>
+      <a class="navbar-brand" href="../index.html">Overview</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -69,25 +69,45 @@
 
       <div class="row margin-top-100">
         <h1 class="title text-center text-light bg-secondary">Random Forest Model</h1>
+        <p class="text-left h4 margin-top-50"> Random Forest Model with Full 30 Features</p>
         <div class="row pt-4">
           <div class="col-md-6">
-            <p class="text-left h4 pt-2"> Model Description 1</p>
+            <a target="_blank" href="../static/images/rf_report_all.PNG">
+              <img src="../static/images/rf_report_all.PNG" alt="rf report all" class="model-report img-fluid">
+            </a>
           </div>
-          <div class="col-md-6">
-            <a target="_blank" href="../static/images/svm.PNG">
-              <img src="../static/images/svm.PNG" alt="breast cancer diagrame" class="img-fluid">
+          <div class="col-md-6 gx-5">
+            <a target="_blank" href="../static/images/rf_cm_all.PNG">
+              <img src="../static/images/rf_cm_all.PNG" alt="rf cm all" class="model-img img-fluid">
             </a>
           </div>
         </div>
       </div>
 
+      <p class="text-left h4 margin-top-50"> Random Forest Model with 7 BestFeature Selected Features</p>
       <div class="row pt-4">
         <div class="col-md-6">
-          <p class="text-left h4 pt-2"> Model Description 2</p>
+          <a target="_blank" href="../static/images/rf_report_all.PNG">
+            <img src="../static/images/rf_report_sk.PNG" alt="rf report sk" class="model-report img-fluid">
+          </a>
         </div>
+        <div class="col-md-6 gx-5">
+          <a target="_blank" href="../static/images/rf_cm_sk.PNG">
+            <img src="../static/images/rf_cm_sk.PNG" alt="rf cm sk" class="model-img img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <p class="text-left h4 margin-top-50"> Random Forest Model with 7 Correlation Selected Features</p>
+      <div class="row pt-4">
         <div class="col-md-6">
-          <a target="_blank" href="../static/images/svm.PNG">
-            <img src="../static/images/svm.PNG" alt="breast cancer diagrame" class="img-fluid">
+          <a target="_blank" href="../static/images/rf_report_all.PNG">
+            <img src="../static/images/rf_report_cs.PNG" alt="rf report cs" class="model-report img-fluid">
+          </a>
+        </div>
+        <div class="col-md-6 gx-5">
+          <a target="_blank" href="../static/images/rf_cm_cs.PNG">
+            <img src="../static/images/rf_cm_cs.PNG" alt="rf cm cs" class="model-img img-fluid">
           </a>
         </div>
       </div>
@@ -102,8 +122,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
-    <!-- <script src="static/js/data.js"></script>
-    <script src="static/js/app.js"></script> -->
+
 </body>
 
 </html>

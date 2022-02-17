@@ -172,6 +172,15 @@ select {
 
   /* Meet the Team */
 
+.model-report {
+  height: 400px;
+  width: 800px;
+}
+
+.model-img {
+  height: 400px;
+  width: 500px;
+}
 
 /* media queries which will only be activated at specific screen sizes */
 @media (max-width: 800px) {

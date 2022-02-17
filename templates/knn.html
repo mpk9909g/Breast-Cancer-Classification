@@ -16,7 +16,7 @@
 
     <!-- Nav Bar Setting -->
     <nav class="h5 navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="index.html">Overview</a>
+      <a class="navbar-brand" href="../index.html">Overview</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,23 +71,57 @@
         <h1 class="title text-center text-light bg-secondary">Knearest Neighbors Model</h1>
         <div class="row pt-4">
           <div class="col-md-6">
-            <p class="text-left h4 pt-2"> Model Description 1</p>
+            <p class="text-left h4 pt-2">After the implementation and the execution of the created machine learning model using the “K-Nearest Neighbor Classifier algorithm” it could be clearly revealed that the predicted model for the “Breast Cancer Wisconsin (Diagnostic) Data Set ” gives the best accuracy score as 97.18% with feature size = 30.</p>
+            <p class="text-left h4 pt-2">Optimal numbers of neighbors were 9. To select the best tuning parameter in this model applied 10 fold cross-validation for testing.</p>
           </div>
           <div class="col-md-6">
-            <a target="_blank" href="../static/images/svm.PNG">
-              <img src="../static/images/svm.PNG" alt="breast cancer diagrame" class="img-fluid">
+            <a target="_blank" href="../static/images/knn_k.PNG">
+              <img src="../static/images/knn_k.PNG" alt="KNN_k number " class="img-fluid">
             </a>
           </div>
         </div>
       </div>
 
+      <div class="row">
+        <p class="text-left h4 margin-top-50">KNN Model with Full 30 Features</p>
+        <div class="row pt-4">
+          <div class="col-md-6">
+            <a target="_blank" href="../static/images/knn_report_all.PNG">
+              <img src="../static/images/knn_report_all.PNG" alt="knn report all" class="model-report img-fluid">
+            </a>
+          </div>
+          <div class="col-md-6 gx-5">
+            <a target="_blank" href="../static/images/knn_cm_all.PNG">
+              <img src="../static/images/knn_cm_all.PNG" alt="knn cm all" class="model-img img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-left h4 margin-top-50">KNN Model with 7 BestFeature Selected Features</p>
       <div class="row pt-4">
         <div class="col-md-6">
-          <p class="text-left h4 pt-2"> Model Description 2</p>
+          <a target="_blank" href="../static/images/knn_report_all.PNG">
+            <img src="../static/images/knn_report_sk.PNG" alt="knn report sk" class="model-report img-fluid">
+          </a>
         </div>
+        <div class="col-md-6 gx-5">
+          <a target="_blank" href="../static/images/knn_cm_sk.PNG">
+            <img src="../static/images/knn_cm_sk.PNG" alt="knn cm sk" class="model-img img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <p class="text-left h4 margin-top-50">KNN Model with 7 Correlation Selected Features</p>
+      <div class="row pt-4">
         <div class="col-md-6">
-          <a target="_blank" href="../static/images/svm.PNG">
-            <img src="../static/images/svm.PNG" alt="breast cancer diagrame" class="img-fluid">
+          <a target="_blank" href="../static/images/knn_report_all.PNG">
+            <img src="../static/images/knn_report_cs.PNG" alt="knn report cs" class="model-report img-fluid">
+          </a>
+        </div>
+        <div class="col-md-6 gx-5">
+          <a target="_blank" href="../static/images/knn_cm_cs.PNG">
+            <img src="../static/images/knn_cm_cs.PNG" alt="knn cm cs" class="model-img img-fluid">
           </a>
         </div>
       </div>
