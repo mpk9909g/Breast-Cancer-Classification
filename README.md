@@ -51,7 +51,7 @@ Here you will see in addition to 3 groups of features used to train and test the
 We trained and tested our data with KNN, logistic regression, random forest, SVM and Neural network models. The winner is the logistic regression model where we used features selected based on their correlation with each other and with the diagnosis. This Model was then used in the Prediction site **http://bc-predict.herokuapp.com/**. 
 
 
-
+[Diagram](/static/images/diagram.png)
 
 
 ## Reference:
@@ -70,7 +70,8 @@ We trained and tested our data with KNN, logistic regression, random forest, SVM
 12. https://deepai.org/machine-learning-glossary-and-terms/random-forest
 13. https://en.wikipedia.org/wiki/Support-vector_machine
 14. https://www.investopedia.com/terms/n/neuralnetwork.asp
-15. BioRender.com
+15. https://machinelearningmastery.com/k-fold-cross-validation/
+16. BioRender.com
 
 
 
