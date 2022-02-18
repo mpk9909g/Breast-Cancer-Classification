@@ -50,9 +50,9 @@ Here you will see in addition to 3 groups of features used to train and test the
 
 We trained and tested our data with KNN, logistic regression, random forest, SVM and Neural network models. The winner is the logistic regression model where we used features selected based on their correlation with each other and with the diagnosis. This Model was then used in the Prediction site **http://bc-predict.herokuapp.com/**. 
 
-##Architecture of the project
+## Architecture of the project
 
-Please refer to the diagram to get an understanding how every item is connected in this project. 
+Please refer to the diagram to get an understanding of how every item is connected in this project. 
 
 
 ![Diagram](/static/images/diagram.png)
