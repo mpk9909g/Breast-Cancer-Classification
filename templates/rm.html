@@ -57,6 +57,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <a class="navbar-brand" href="reference.html">Reference</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
       </div>
 
     </nav>
@@ -70,7 +76,8 @@
 
       <div class="row margin-top-100">
         <h1 class="title text-center text-light bg-secondary">Random Forest Model</h1>
-        <p class="text-left h4 margin-top-50"> Random Forest Model with Full 30 Features</p>
+        <p class="text-left h4 margin-top-50">Random Forest is a highly configurable model. We started our tuning exercise with 200 trees, which we were able to reduce to 10 while still maintaining a good accuracy. Next we tried setting the max_features to ‘sqrt’ to limit the number of features being considered for each split. Given the wide variety of parameters, we went with a Grid Search. It is very resource consuming and takes about 1min runtime with an M1 chip, however does not improve the accuracy drastically and so was not considered as a candidate for our predictor app.</p>
+        <p class="text-left h4 pt-4"> Random Forest Model with Full 30 Features</p>
         <div class="row pt-4">
           <div class="col-md-6">
             <a target="_blank" href="../static/images/rf_report_all.png">
