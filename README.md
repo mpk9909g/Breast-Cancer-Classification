@@ -52,7 +52,7 @@ We trained and tested our data with KNN, logistic regression, random forest, SVM
 
 ## Architecture of the project
 
-Please refer to the diagram to get an understanding of how every item is connected in this project. 
+Please refer to the diagram to get an understanding of how each item is related in this project. It also shows how the two GitHub pages ( GitHub research and GitHub prediction) are connected.
 
 
 ![Diagram](/static/images/diagram.png)
