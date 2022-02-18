@@ -1,34 +1,35 @@
 # Breast-Cancer-Classification
-Apply machine learning to classify benign or malignant breast cancer tumors 
+This project uses machine learning algorithms to predict the class of a breast tumor based on specific features of breast cells.
 
-Data preprocessing notebook includes data cleaning, feature selection and splitting the data into train and test sets. 
+To go to the github pages that hosts this repo type www...... into your browser and explore the website. This site has a link to www.bc-predict.herokuapp.com where you can make prediction based on the cell features.
 
-Our preprocessing also includes selecting the best features for our model. 
+Notebooks in this Repo
+Data preprocessing notebook includes data cleaning, feature selection and splitting the data into train and test sets.
 
-We used 3 different feature selections.  
-  
-1. First group includes all of the features from the data.
-1. Second group includes the top 7 features selected based on the the SelectKBest function.
-1. Third group includes the top 7 features selected based on their correlation with each other and the diagnosis.
+Model comparison notebook evaluates all tuned Models against same test set and does KFold Cross Validation on each model with each feature group.
 
-All test and train datasets are in the ```test_train_data``` folder.
-All scaler files are in the ```scaler``` folder
+Notebooks for random forest model, KNN model,Logistic regression model,NN model and SVM model includes model optimization for each ML model used here.
 
-Group 1;
-Train data files : ```X_train_scaled.csv```
-Test data files : ```X_test_scaled.csv```
-Scaler file  ```scaler_allfeatures.sav```
+Selected Feautures
+We used 3 different groups as our selected features
 
-Group 2;
-Train data files : ```X_train_scaled_sk.csv```
-Test data files : ```X_test_scaled_sk.csv```
-Scaler file  ```scaler_selectBestFeatures.sav```
+First group includes all of the features from the data.
+Second group includes the top 7 features selected based on the the SelectKBest function.
+Third group includes the top 7 features selected based on their correlation with each other and the diagnosis.
+We generated train and test data files and scaler files for all the feature groups.
 
-Group 3;
-Train data files : ```X_train_scaled_cs.csv```
-Test data files : ```X_test_scaled_cs.csv```
-Scaler file  ```scaler_correlationFeatures.sav```
+All test and train datasets are in the test_train_data folder. All scaler files are in the scaler folder
 
+Group 1; Train data files : X_train_scaled.csv Test data files : X_test_scaled.csv Scaler file scaler_allfeatures.sav
+
+Group 2; Train data files : X_train_scaled_sk.csv Test data files : X_test_scaled_sk.csv Scaler file scaler_selectBestFeatures.sav
+
+Group 3; Train data files : X_train_scaled_cs.csv Test data files : X_test_scaled_cs.csv Scaler file scaler_correlationFeatures.sav
+
+Rational of model optimization
+We aimed for high accuracy with the least number of features.
+
+We trained and tested our data with KNN, logistic regression, random.
 
 
 
