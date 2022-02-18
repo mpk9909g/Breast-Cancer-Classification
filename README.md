@@ -44,7 +44,8 @@ We trained and tested our data with KNN, logistic regression, random forest, SVM
 8. https://www.kenhub.com/en/library/anatomy/cell-nucleus
 9. https://www.thoughtco.com/the-cell-nucleus-373362
 10. http://www.captodayonline.com/Archives/feature_stories/1006benignmalignantRED.pdf
-11. BioRender.com
+11. https://www.karger.com/Article/FullText/508780
+12. BioRender.com
 
 
 
