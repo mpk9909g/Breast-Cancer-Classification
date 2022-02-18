@@ -1,5 +1,5 @@
 # Breast-Cancer-Classification
-This project uses machine learning algorithms to predict the class of a breast tumor based on specific features of breast cells.
+This project uses machine learning algorithms to predict the class of a breast tumor based on specific features of a group of breast cells.
 
 Click **[here](https://mpk9909g.github.io/Breast-Cancer-Classification/)** to go to the github page that hosts this repo and explore the website. That page has a link to our  Prediction site **http://bc-predict.herokuapp.com/** where you can predict the tumor type of a group of cells based on their features.
 Click **[here](https://github.com/mpk9909g/BC_classification_Heroku.git)** to go to our second **GitHub-Repo** where you can find all necessary files and codes for our **Prediction Site**. 
@@ -7,7 +7,9 @@ Click **[here](https://github.com/mpk9909g/BC_classification_Heroku.git)** to go
 ## Notebooks in this Repo
 Data preprocessing notebook includes data cleaning, feature selection and splitting the data into train and test sets.
 
-Model comparison notebook evaluates all tuned Models against same test set and does KFold Cross Validation on each model with each feature group.
+Model comparison notebook evaluates all tuned Models against same test set and does **KFold Cross Validation** on each model with each feature group.
+
+*Note: Although **Grid search** was done on Random Forest, while performing KFold Cross Validation the grid search tuning was not done due to size issues*. 
 
 Notebooks for random forest model, KNN model,Logistic regression model,NN model and SVM model includes model optimization for each ML model. Each model has a confusion matrix that shows how well the model is doing in predicting the correct outcome. 
 
@@ -46,8 +48,14 @@ We aimed for high accuracy with the least number of features.
 
 Here you will see in addition to 3 groups of features used to train and test the various models also a KFold Cross Validation for further testing the models. 
 
-We trained and tested our data with KNN, logistic regression, random forest, SVM and Neural network models. The winner is the logistic regression model where we used features selected based on their correlation with each other and with the diagnosis. 
+We trained and tested our data with KNN, logistic regression, random forest, SVM and Neural network models. The winner is the logistic regression model where we used features selected based on their correlation with each other and with the diagnosis. This Model was then used in the Prediction site **http://bc-predict.herokuapp.com/**. 
 
+## Architecture of the project
+
+Please refer to the diagram to get an understanding of how each item is related in this project. It also shows how the two GitHub pages ( GitHub research and GitHub prediction) are connected.
+
+
+![Diagram](/static/images/diagram.png)
 
 
 ## Reference:
@@ -66,7 +74,8 @@ We trained and tested our data with KNN, logistic regression, random forest, SVM
 12. https://deepai.org/machine-learning-glossary-and-terms/random-forest
 13. https://en.wikipedia.org/wiki/Support-vector_machine
 14. https://www.investopedia.com/terms/n/neuralnetwork.asp
-15. BioRender.com
+15. https://machinelearningmastery.com/k-fold-cross-validation/
+16. BioRender.com
 
 
 
