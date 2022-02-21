@@ -1,11 +1,15 @@
 # Breast-Cancer-Classification
 
-##Project done by;
+## Project done by;
 
 Matt Keeley
+
 Jenny Yang
+
 Shirine Masood
+
 Shreyansh Saraiya
+
 Fatma Ayaloglu Butun
 
 
